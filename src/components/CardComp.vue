@@ -1,5 +1,4 @@
 <template>
-
     <router-link :to="{ name: 'testimonials', params: { id: testimonial.id }}" class="cardbody">
      <img :src="testimonial.image" />
      <h3>{{ testimonial.name }}</h3>
@@ -27,8 +26,6 @@
  
  <style scoped>
 
- 
-
  * {
    text-decoration: none;
    color:rgb(255, 255, 255);
@@ -51,6 +48,15 @@ border-radius:5px;
    margin-left: 100px;
    transition: transform 0.4s ease-in-out; /* Added transition */
  }
+ /* @media  screen and (max-width:700p) {
+  .flex-conatiner {
+    display: grid;
+    grid-template-columns:subgrid;
+    margin-left: 0;
+    padding: 0px;
+  }
+
+} */
  
  .cardbody:hover {
    transform: scale(1.05); /* Updated transform on hover */

@@ -45,7 +45,21 @@ grid-template-columns: repeat(2,1fr);
 template{
 text-decoration: none;
 }
+@media  screen and (max-width:300px) {
+  .flex-container {
+   display:flex;
+   flex-wrap: wrap;
+   width:100%;
+   margin-left:0;
+  }
+  .welcome-text{
+    text-align:center;
+    padding:0;
+    right:2%;
+    
+  }
 
+}
 .welcome-text {
   position: absolute;
  margin-bottom: 50000px;

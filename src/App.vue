@@ -5,13 +5,14 @@
   </nav> -->
   <NavBarComp/>
   <router-view/>
+ 
   <FooterComp/>
 </template>
 
 <script>
 import NavBarComp from './components/NavBarComp.vue'
 import FooterComp from './components/FooterComp.vue'
-// import '@fortawesome/fontawesome-free/css/all.css';
+// import fontawesomeIcon '@fortawesome/fontawesome-free/css/all.css';
 
 
 

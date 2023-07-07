@@ -6,6 +6,7 @@
       <span><li><router-link to="/">Home</router-link></li></span>
       <span><li><router-link to="/about">About </router-link></li></span>
       <span><li><router-link to="/testimonials">Testimonials</router-link></li></span>
+      <span><li><router-link to="/resume">Resume</router-link></li></span>
       <span><li><router-link to="/projects">Projects</router-link></li></span>
       <span><li><router-link to="/contact">Contact </router-link></li> </span>
      <li><button @click="goToContactPage" class="hire-me">Hire Me</button></li>
@@ -55,9 +56,6 @@ transition: width 0.2s ease-out;
 span:hover::after{
 width: 100%;
 }
-
-
-
 .hire-me{
   background-color:rgba(162, 162, 233, 0.582);
   color:rgb(0, 0, 0); 
@@ -102,6 +100,21 @@ li {
 a {
   color: #ffffff;
   text-decoration: none;
+}
+@media only screen and (max-width: 300px){
+ nav {
+  width:100%;
+ }
+ nav, span {
+  width:100%;
+ }
+ a {
+  display:flex;
+  flex-wrap: wrap; 
+  
+  margin:0;
+ 
+ }
 }
 
 router-link:hover {

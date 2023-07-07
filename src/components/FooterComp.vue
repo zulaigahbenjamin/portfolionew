@@ -20,6 +20,12 @@
   </template>
   
   <style scoped>
+  @media only screen and(max-width:300px){
+    footer {
+      width:100%;
+    }
+    
+  }
   footer {
     background-color: #333;
     color: #fff;
@@ -27,6 +33,7 @@
     text-align: center;
     height:fit-content;
   }
+
   .sl {
     padding-left:20px;
     width:50px;
