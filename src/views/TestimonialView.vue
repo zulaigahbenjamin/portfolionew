@@ -17,17 +17,11 @@
       <p>{{ testimonial.content }}</p>
       </div>
     
-
-    mounted() {
-      this.$store.dispatch("getTestimonial", this.id)
-    },
-    computed: {
-      tutorial() {
-        return this.$store.state.testimonial
-      }
-    },
-  }
-  </script>
+    </slide>
+  </carousel>
+  <TestimonialCarousel />
+</template>
+   
   <style scoped>
   * {
     text-decoration:none;
@@ -45,11 +39,8 @@
     border: 2xp solid black;
   }
   </style>
-=======
-    </slide>
-  </carousel>
-  <TestimonialCarousel />
-</template>
+
+
 
 
 <script>
@@ -75,7 +66,7 @@ export default {
 img {
   width: 10px;
 }
-}
+
 template{
   text-decoration: none;
 }

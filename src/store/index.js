@@ -14,12 +14,13 @@ export default createStore({
   // },
 
   state: {
-    projects: null,
-    testimonials: null,
-    testimonial: null,
-    skills: null,
-    education: null,
-  },
+  projects: null,
+  testimonials: null,
+  testimonial: null,
+  skills: null,
+  education: null,
+},
+
 
   mutations: {
     setTestimonials: (state, testimonials) => {

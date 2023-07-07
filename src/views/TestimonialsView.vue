@@ -59,21 +59,6 @@ text-decoration: none;
     right:2%;
     
   }
-
-
-
-
-export default {
-  components: { CardComp},
-  
-  computed : {
-    testimonials() {
-      return this.$store.state.testimonials
-    }
-  },
-  mounted() {
-    this.$store.dispatch('getTestimonials')
-  },
 }
 
 .welcome-text {
@@ -85,9 +70,6 @@ export default {
   animation: slide-in 1s ease-in-out forwards;
   z-index: 1;
 }
-
-</script>
-<style scoped>
 .flex-container {
 display:grid;
 grid-template-columns: repeat(2,1fr);
@@ -120,3 +102,17 @@ text-decoration: none;
 
 </style>
 
+<!-- <script>
+export default {
+  components: { CardComp},
+  
+  computed : {
+    testimonials() {
+      return this.$store.state.testimonials
+    }
+  },
+  mounted() {
+    this.$store.dispatch('getTestimonials')
+  },
+}
+</script> -->

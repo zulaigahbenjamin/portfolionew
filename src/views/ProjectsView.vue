@@ -5,10 +5,10 @@
         <div class="btn btn-three">
           <div class="card-body">
             <h2>{{ projects.name }}</h2>
-            <img :src="projects.image" :alt="projects.name">
+            <img :src="projects.image" :alt="projects.name"/>
             <p>{{ projects.description }}</p>
-            <p>{{ projects.github - link }}</p>
-            <p>{{ projects.netlify - link }}</p>
+            <a href="link">{{ projects.github - link }}</a>
+            <a href="link">{{ projects.netlify - link }}</a>
           </div>
         </div>
       </div>
@@ -21,11 +21,30 @@ export default {
   computed: {
     projects() {
       return this.$store.state.projects;
+      
     },
+  },
+  data() {
+    return {
+      link: '' // Initialize the "link" property with an empty string or a default value
+    };
   },
   mounted() {
     this.$store.dispatch('fetchProjects');
+    this.fetchProject
   },
+  methods: {
+    fetchProject() {
+      fetch('https://zulaigahbenjamin.github.io/jsonfile/data/db.json')
+        .then(response => response.json())
+        .then(project => {
+          this.link = project.link; // Assign the "link" property with the value from the JSON data
+        })
+        .catch(error => {
+          console.error('Error fetching data:', error);
+        });
+    }
+  }
 };
 </script>
 

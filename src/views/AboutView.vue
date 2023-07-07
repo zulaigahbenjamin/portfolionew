@@ -7,7 +7,7 @@
        
        <div class="pic">
          <img src="https://i.postimg.cc/6qmwS691/IMG-2409-3.jpg" alt="image of myself"
-         />
+         class="pic"/>
        </div>
        <div class="more-info">
          <p>
@@ -137,83 +137,154 @@
    
    
    <style scoped>
-   .slide-in {
-     animation: slideIn 1s forwards;
-     opacity: 0;
-   }
+  .slide-in {
+  animation: slideIn 1s forwards;
+  opacity: 0;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.pic {
+  width: 500px;
+  height: 400px;
+  margin-bottom: 50px;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  margin: 20px;
+}
+
+.containers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.container {
+  margin: 10px;
+  text-align: center;
+  font-size: larger;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding-left: 80px;
+}
+
+.num {
+  display: grid;
+}
+
+.text {
+  display: flex;
+}
+
+.containers {
+  background-color: #f5f5f5;
+  height: 100%;
+}
+
+.about-section {
+  display: flex;
+  background-color: #f5f5f5;
+}
+
+.pic {
+  margin-left: 5%;
+}
+
+.more-info {
+  margin-left: 5%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 250px;
+  height: 300px;
+  border-radius: 5%;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 770px) {
+  .pic {
+    margin-bottom: 30px;
+    
+  }
+
+  .more-info {
+    margin-left: -250px;
+    margin-top: 320px;
+    margin-right:200px;
+    display:flex;
+    flex-wrap: wrap;
+  }
+
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 356px) {
+  .pic {
+    margin-left: 0;
+    width:300px;
+    height:250px;
+    
+  }
+
+  .more-info {
+    margin-left: -200px;
    
-   @keyframes slideIn {
-     from {
-       transform: translateX(-100%);
-     }
-     to {
-       transform: translateX(0);
-       opacity: 1;
-     }
-   }
-   .pic {
-     width: 500px;
-     height: 400px;
-     margin-bottom: 50px;
-   }
-   button {
-     width: 200px;
-     height:50px;
-     margin:20px;
-   }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .pic {
+    margin-left: 0;
+    width:300px;
+    height:250px;
+    
+  }
+
+  .more-info {
+   float:left
    
-   .containers {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-   
-   }
-   
-   .wrapper {
-     display: flex;
-   }
-   
-   .container {
-     margin: 10px;
-     text-align: center;
-     font-size: larger;
-     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-     padding-left: 80px;
-   }
-   
-   .num {
-     display: grid;
-   }
-   
-   .text {
-     display: flex;
-   }
-   
-   .containers {
-     background-color: #f5f5f5;
-     height: 100%;
-   }
-   
-   .about-section {
-     display: flex;
-     background-color: #f5f5f5;
-   }
-   
-   .pic {
-     margin-left: 5%;
-   }
-   
-   .more-info {
-     margin-left: 5%;
-     text-align: left;
-     margin-bottom: 20px;
-   }
-   
-   img {
-     width: 250px;
-     height: 300px;
-     border-radius: 5%;
-     object-fit: cover;
-     margin-top: 20px;
-   }</style>
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+   </style>
+
    
