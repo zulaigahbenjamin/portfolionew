@@ -24,6 +24,7 @@
 import CardComp from '@/components/CardComp.vue'
 
 
+
 export default {
   components: { CardComp},
   
@@ -59,7 +60,22 @@ text-decoration: none;
     
   }
 
+
+
+
+export default {
+  components: { CardComp},
+  
+  computed : {
+    testimonials() {
+      return this.$store.state.testimonials
+    }
+  },
+  mounted() {
+    this.$store.dispatch('getTestimonials')
+  },
 }
+
 .welcome-text {
   position: absolute;
  margin-bottom: 50000px;
@@ -69,6 +85,27 @@ text-decoration: none;
   animation: slide-in 1s ease-in-out forwards;
   z-index: 1;
 }
+
+</script>
+<style scoped>
+.flex-container {
+display:grid;
+grid-template-columns: repeat(2,1fr);
+}
+template{
+text-decoration: none;
+}
+
+.welcome-text {
+  position: absolute;
+ margin-bottom: 50000px;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: slide-in 1s ease-in-out forwards;
+  z-index: 1;
+}
+
 
 @keyframes slide-in {
   0% {
@@ -80,4 +117,6 @@ text-decoration: none;
     opacity: 1;
   }
 }
+
 </style>
+
