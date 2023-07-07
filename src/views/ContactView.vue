@@ -10,7 +10,7 @@
          <h1><i class="fa-regular fa-address-book" style="color: #0d0d0d;"></i> Contact Me </h1>
          <div>
            <label>Your Full Name</label><br />
-           <input type="text" name="name" class="me" placeholder="Enter Your Full Name" /><br />
+           <input type="text" name="name" class="me" placeholder="Enter Your Full Name" required /><br />
          </div>
          <br />
          <br />
@@ -22,13 +22,13 @@
          <br />
          <div>
            <label>Subject</label><br />
-           <input type="text" name="subject" class="me" placeholder="Whats the Subject" /><br />
+           <input type="text" name="subject" class="me" placeholder="Whats the Subject" required/><br />
          </div>
          <br />
          <br />
          <div>
            <label>Message</label><br />
-           <input type="text" name="message" class="my" placeholder="Type your message please" />
+           <input type="text" name="message" class="my" placeholder="Type your message please" required/>
          </div>
          <br />
          <button type="submit" name="submit">Submit</button>

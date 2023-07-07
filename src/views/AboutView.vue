@@ -2,11 +2,12 @@
     <div>
        <h1 class="slide-in">{{ message }}</h1>
      </div>
-     <!-- <h1>Welcome to my web developer portfolio!</h1> -->
+     
      <section class="about-section">
        
        <div class="pic">
-         <img src="https://i.postimg.cc/6qmwS691/IMG-2409-3.jpg" alt="image of myself" />
+         <img src="https://i.postimg.cc/6qmwS691/IMG-2409-3.jpg" alt="image of myself"
+         />
        </div>
        <div class="more-info">
          <p>

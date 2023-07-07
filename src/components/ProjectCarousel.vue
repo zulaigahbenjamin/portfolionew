@@ -1,14 +1,13 @@
-
-
 <template>
-
+    <div>
+        
+    </div>
 </template>
 <script>
 export default {
-  props: ["testimonial"],
-
+    
 }
 </script>
-<style scoped>
-
+<style>
+    
 </style>

@@ -17,6 +17,35 @@
       <p>{{ testimonial.content }}</p>
       </div>
     
+
+    mounted() {
+      this.$store.dispatch("getTestimonial", this.id)
+    },
+    computed: {
+      tutorial() {
+        return this.$store.state.testimonial
+      }
+    },
+  }
+  </script>
+  <style scoped>
+  * {
+    text-decoration:none;
+  }
+  img {
+    width: 10px;
+  }
+  template{
+    text-decoration: none;
+  }
+  .testimonial-details {
+  border: 2px solid black;
+  }
+  .card-body {
+    border: 2xp solid black;
+  }
+  </style>
+=======
     </slide>
   </carousel>
   <TestimonialCarousel />
@@ -46,6 +75,7 @@ export default {
 img {
   width: 10px;
 }
+}
 template{
   text-decoration: none;
 }
@@ -56,3 +86,4 @@ border: 2px solid black;
   border: 2xp solid black;
 }
 </style>
+
